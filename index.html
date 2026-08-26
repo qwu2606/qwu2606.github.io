@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Qian Wu | Peking University</title>
+
+  <meta
+    name="description"
+    content="Qian Wu, Assistant Professor at Peking University. Research in acoustofluidics, acoustic bioelectronics, active metamaterials, non-Hermitian mechanics, and spatiotemporal wave control."
+  />
+
+  <style>
+    /* =========================
+       GLOBAL
+    ========================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333333;
+      background: #ffffff;
+      line-height: 1.65;
+    }
+
+    a {
+      color: #7b1634;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      color: #a3214a;
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+
+    /* =========================
+       SIDEBAR
+    ========================== */
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      width: 315px;
+      height: 100vh;
+
+      background: #f5f5f4;
+
+      border-right: 1px solid #dedede;
+
+      padding: 48px 36px;
+
+      overflow-y: auto;
+    }
+
+    .profile-photo {
+      width: 165px;
+      height: 165px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      display: block;
+
+      margin-bottom: 24px;
+
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .sidebar h1 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 30px;
+      font-weight: 400;
+
+      color: #222222;
+
+      line-height: 1.2;
+
+      margin-bottom: 6px;
+    }
+
+    .chinese-name {
+      font-family: Georgia, "Times New Roman", serif;
+
+      color: #777777;
+
+      font-size: 18px;
+
+      margin-bottom: 18px;
+    }
+
+    .position {
+      font-size: 15px;
+      color: #333333;
+
+      line-height: 1.55;
+
+      margin-bottom: 14px;
+    }
+
+    .affiliation {
+      font-size: 14px;
+      color: #666666;
+
+      line-height: 1.6;
+    }
+
+    .nav {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .nav a {
+      display: block;
+
+      font-size: 15px;
+      color: #444444;
+
+      padding: 5px 0;
+    }
+
+    .nav a:hover {
+      color: #7b1634;
+      text-decoration: none;
+
+      padding-left: 3px;
+    }
+
+    .sidebar-bottom {
+      border-top: 1px solid #d8d8d8;
+
+      padding-top: 20px;
+
+      font-size: 13.5px;
+      color: #666666;
+    }
+
+    .sidebar-bottom div {
+      margin-bottom: 7px;
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+    ========================== */
+
+    .main {
+      margin-left: 315px;
+
+      width: calc(100% - 315px);
+
+      max-width: 1150px;
+
+      padding: 58px 75px 90px;
+    }
+
+    section {
+      margin-bottom: 68px;
+
+      scroll-margin-top: 30px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 30px;
+      font-weight: 400;
+
+      color: #222222;
+
+      margin-bottom: 24px;
+
+      border-bottom: 1px solid #dddddd;
+
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-weight: 400;
+
+      color: #222222;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-text {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 19px;
+
+      line-height: 1.82;
+
+      color: #444444;
+
+      max-width: 850px;
+    }
+
+    .about-text strong {
+      color: #222222;
+    }
+
+    .highlight {
+      color: #7b1634;
+    }
+
+    .quick-links {
+      margin-top: 23px;
+    }
+
+    .quick-links a {
+      display: inline-block;
+
+      margin-right: 18px;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       RESEARCH
+    ========================== */
+
+    .research-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 22px;
+
+      margin-top: 10px;
+    }
+
+    .research-item {
+      border: 1px solid #e1e1e1;
+
+      padding: 25px 25px 22px;
+
+      background: #ffffff;
+
+      min-height: 200px;
+
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .research-item:hover {
+      transform: translateY(-3px);
+
+      box-shadow: 0 7px 22px rgba(0, 0, 0, 0.06);
+    }
+
+    .research-num {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 34px;
+
+      color: #c7c7c7;
+
+      margin-bottom: 7px;
+    }
+
+    .research-item h3 {
+      font-size: 20px;
+
+      margin-bottom: 10px;
+    }
+
+    .research-item p {
+      color: #666666;
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+      margin: 0;
+    }
+
+
+    /* =========================
+       PUBLICATIONS
+    ========================== */
+
+    .publication {
+      margin-bottom: 27px;
+    }
+
+    .publication-title {
+      font-size: 16px;
+
+      font-weight: 600;
+
+      color: #2a2a2a;
+
+      line-height: 1.5;
+
+      margin-bottom: 4px;
+    }
+
+    .authors {
+      color: #555555;
+
+      font-size: 14px;
+
+      margin-bottom: 3px;
+    }
+
+    .journal {
+      font-size: 14px;
+
+      color: #777777;
+    }
+
+    .journal em {
+      color: #555555;
+    }
+
+    .paper-link {
+      margin-left: 8px;
+
+      font-size: 13px;
+    }
+
+    .tag {
+      display: inline-block;
+
+      margin-left: 8px;
+
+      padding: 1px 7px;
+
+      border: 1px solid #ceb7be;
+
+      border-radius: 3px;
+
+      color: #7b1634;
+
+      font-size: 11px;
+    }
+
+    .more-link {
+      margin-top: 30px;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       NEWS
+    ========================== */
+
+    .news-item {
+      display: grid;
+
+      grid-template-columns: 110px 1fr;
+
+      column-gap: 20px;
+
+      margin-bottom: 15px;
+
+      font-size: 14px;
+    }
+
+    .news-date {
+      color: #999999;
+    }
+
+    .news-content {
+      color: #444444;
+    }
+
+
+    /* =========================
+       PEOPLE
+    ========================== */
+
+    .people-intro {
+      color: #555555;
+
+      max-width: 800px;
+
+      margin-bottom: 25px;
+    }
+
+    .people-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 28px;
+    }
+
+    .person {
+      text-align: center;
+    }
+
+    .person img {
+      width: 125px;
+      height: 125px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      background: #eeeeee;
+
+      margin-bottom: 10px;
+    }
+
+    .person-name {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 18px;
+
+      color: #222222;
+
+      margin-bottom: 2px;
+    }
+
+    .person-role {
+      font-size: 13px;
+
+      color: #777777;
+    }
+
+
+    /* =========================
+       JOIN US
+    ========================== */
+
+    .join-box {
+      background: #f6f6f5;
+
+      border-left: 4px solid #7b1634;
+
+      padding: 27px 30px;
+    }
+
+    .join-box h3 {
+      font-size: 21px;
+
+      margin-bottom: 12px;
+    }
+
+    .join-box p {
+      font-size: 14.5px;
+
+      color: #555555;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      border-top: 1px solid #dddddd;
+
+      padding-top: 22px;
+
+      color: #999999;
+
+      font-size: 12.5px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .sidebar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        padding: 38px 28px;
+
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+      }
+
+      .profile-photo {
+        width: 140px;
+        height: 140px;
+      }
+
+      .nav a {
+        display: inline-block;
+
+        margin-right: 18px;
+      }
+
+      .main {
+        margin-left: 0;
+
+        width: 100%;
+
+        padding: 45px 30px 70px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .people-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 550px) {
+
+      .main {
+        padding: 35px 22px 55px;
+      }
+
+      .about-text {
+        font-size: 17px;
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .people-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+
+        row-gap: 2px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- ========================================
+       LEFT SIDEBAR
+  ========================================= -->
+
+  <aside class="sidebar">
+
+    <!--
+      Upload your portrait to GitHub
+      and name it:
+      profile.jpg
+    -->
+
+    <img
+      class="profile-photo"
+      src="profile.jpg"
+      alt="Qian Wu"
+    />
+
+
+    <h1>Qian Wu</h1>
+
+    <div class="chinese-name">
+      吴谦
+    </div>
+
+
+    <div class="position">
+      Assistant Professor<br />
+      Principal Investigator
+    </div>
+
+
+    <div class="affiliation">
+      Department of Mechanics and Engineering Science<br />
+      College of Engineering<br />
+      Peking University
+    </div>
+
+
+    <nav class="nav">
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#research">
+        Research
+      </a>
+
+      <a href="#publications">
+        Publications
+      </a>
+
+      <a href="#people">
+        People
+      </a>
+
+      <a href="#news">
+        News
+      </a>
+
+      <a href="#join">
+        Join Us
+      </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+      <div>
+        Beijing, China
+      </div>
+
+      <div>
+        YOUR_EMAIL@pku.edu.cn
+      </div>
+
+      <div>
+        <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank">
+          Google Scholar
+        </a>
+      </div>
+
+      <div>
+        <a href="YOUR_GITHUB_LINK" target="_blank">
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+
+  <!-- ========================================
+       MAIN CONTENT
+  ========================================= -->
+
+  <main class="main">
+
+
+    <!-- ========================================
+         ABOUT
+    ========================================= -->
+
+    <section id="about">
+
+      <h2>
+        About
+      </h2>
+
+
+      <div class="about-text">
+
+        <p>
+          I am an Assistant Professor in the
+          <strong>Department of Mechanics and Engineering Science</strong>
+          at
+          <strong>Peking University</strong>.
+        </p>
+
+
+        <p>
+          My research lies at the intersection of
+          <span class="highlight">
+            wave mechanics, active materials, acoustofluidics,
+            and bioengineering
+          </span>.
+          We develop physical principles and engineered systems
+          for dynamically controlling waves and matter across
+          multiple spatial and temporal scales.
+        </p>
+
+
+        <p>
+          Current research interests include
+          acoustofluidics and acoustic manipulation,
+          acoustic bioelectronics,
+          active and non-Hermitian metamaterials,
+          spatiotemporal modulation,
+          and topological wave mechanics.
+        </p>
+
+
+        <div class="quick-links">
+
+          <a href="#research">
+            Research →
+          </a>
+
+          <a href="#publications">
+            Publications →
+          </a>
+
+          <a href="#join">
+            Join the Group →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         RESEARCH
+    ========================================= -->
+
+    <section id="research">
+
+      <h2>
+        Research
+      </h2>
+
+
+      <div class="research-grid">
+
+
+        <div class="research-item">
+
+          <div class="research-num">
+            01
+          </div>
+
+          <h3>
+            Acoustofluidics & Micro/Nano Manipulation
+          </h3>
+
+          <p>
+            Dynamic acoustic fields for manipulating
+            particles, cells, droplets, and micro/nanoscale
+            matter in fluids, with an emphasis on programmable
+            and spatiotemporal control.
+          </p>
+
+        </div>
+
+
+        <div class="research-item">
+
+          <div class="research-num">
+            02
+          </div>
+
+          <h3>
+            Acoustic Bioelectronics
+          </h3>
+
+          <p>
+            Acoustic sensing and actuation platforms that
+            connect electronics, acoustics, and biological
+            systems for mechanobiology, diagnostics,
+            therapeutics, and wearable technologies.
+          </p>
+
+        </div>
+
+
+        <div class="research-item">
+
+          <div class="research-num">
+            03
+          </div>
+
+          <h3>
+            Active & Non-Hermitian Metamaterials
+          </h3>
+
+          <p>
+            Active constitutive control, odd material
+            properties, nonreciprocity, exceptional-point
+            physics, and non-Hermitian wave phenomena in
+            mechanical and acoustic systems.
+          </p>
+
+        </div>
+
+
+        <div class="research-item">
+
+          <div class="research-num">
+            04
+          </div>
+
+          <h3>
+            Spatiotemporal & Topological Wave Mechanics
+          </h3>
+
+          <p>
+            Space-time modulation, frequency conversion,
+            synthetic dimensions, topological states,
+            and programmable transport of elastic and
+            acoustic waves.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         PUBLICATIONS
+    ========================================= -->
+
+    <section id="publications">
+
+      <h2>
+        Selected Publications
+      </h2>
+
+
+      <!-- PAPER 1 -->
+
+      <div class="publication">
+
+        <div class="publication-title">
+          Spatiotemporal acoustic manipulation for
+          programmable transport of micro- and nanoscale matter
+        </div>
+
+        <div class="authors">
+          Q. Wu et al.
+        </div>
+
+        <div class="journal">
+
+          <em>
+            Science Advances
+          </em>
+
+          <span class="tag">
+            Acoustofluidics
+          </span>
+
+          <a
+            class="paper-link"
+            href="https://www.science.org/doi/10.1126/sciadv.aee2983"
+            target="_blank"
+          >
+            [Paper]
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PAPER 2 -->
+
+      <div class="publication">
+
+        <div class="publication-title">
+          Odd mass density in active mechanical metamaterials
+        </div>
+
+        <div class="authors">
+          Q. Wu et al.
+        </div>
+
+        <div class="journal">
+
+          <em>
+            Proceedings of the National Academy of Sciences
+          </em>
+
+          <span class="tag">
+            Odd Materials
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PAPER 3 -->
+
+      <div class="publication">
+
+        <div class="publication-title">
+          Non-Hermitian wave mechanics enabled by
+          active micropolar elasticity
+        </div>
+
+        <div class="authors">
+          Q. Wu et al.
+        </div>
+
+        <div class="journal">
+
+          <em>
+            Nature Communications
+          </em>
+
+          <span class="tag">
+            Non-Hermitian
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PAPER 4 -->
+
+      <div class="publication">
+
+        <div class="publication-title">
+          Active frequency conversion of elastic waves
+          through programmable metamaterials
+        </div>
+
+        <div class="authors">
+          Q. Wu et al.
+        </div>
+
+        <div class="journal">
+
+          <em>
+            Physical Review Letters
+          </em>
+
+          <span class="tag">
+            Active Waves
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PAPER 5 -->
+
+      <div class="publication">
+
+        <div class="publication-title">
+          Topological wave control and particle manipulation
+          in acoustic systems
+        </div>
+
+        <div class="authors">
+          Q. Wu et al.
+        </div>
+
+        <div class="journal">
+
+          <em>
+            Selected work
+          </em>
+
+          <span class="tag">
+            Topological Waves
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="more-link">
+
+        <a
+          href="YOUR_GOOGLE_SCHOLAR_LINK"
+          target="_blank"
+        >
+          View all publications on Google Scholar →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         PEOPLE
+    ========================================= -->
+
+    <section id="people">
+
+      <h2>
+        People
+      </h2>
+
+
+      <p class="people-intro">
+        We are building an interdisciplinary research group
+        spanning mechanics, acoustics, metamaterials,
+        microfluidics, biomedical engineering, and
+        electrical engineering.
+      </p>
+
+
+      <div class="people-grid">
+
+
+        <div class="person">
+
+          <img
+            src="profile.jpg"
+            alt="Qian Wu"
+          />
+
+          <div class="person-name">
+            Qian Wu
+          </div>
+
+          <div class="person-role">
+            Principal Investigator
+          </div>
+
+        </div>
+
+
+        <!--
+        Uncomment when you have students.
+
+        <div class="person">
+
+          <img
+            src="student1.jpg"
+            alt="Student Name"
+          />
+
+          <div class="person-name">
+            Student Name
+          </div>
+
+          <div class="person-role">
+            Ph.D. Student
+          </div>
+
+        </div>
+        -->
+
+
+        <!--
+        <div class="person">
+
+          <img
+            src="student2.jpg"
+            alt="Student Name"
+          />
+
+          <div class="person-name">
+            Student Name
+          </div>
+
+          <div class="person-role">
+            Graduate Student
+          </div>
+
+        </div>
+        -->
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         NEWS
+    ========================================= -->
+
+    <section id="news">
+
+      <h2>
+        News
+      </h2>
+
+
+      <div class="news-item">
+
+        <div class="news-date">
+          Aug 2026
+        </div>
+
+        <div class="news-content">
+          Our group website is online.
+        </div>
+
+      </div>
+
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026
+        </div>
+
+        <div class="news-content">
+          We are recruiting motivated graduate students
+          and postdoctoral researchers.
+        </div>
+
+      </div>
+
+
+      <!--
+      COPY THIS BLOCK FOR NEW NEWS
+
+      <div class="news-item">
+
+        <div class="news-date">
+          Sep 2026
+        </div>
+
+        <div class="news-content">
+          Your news goes here.
+        </div>
+
+      </div>
+      -->
+
+
+    </section>
+
+
+
+    <!-- ========================================
+         JOIN US
+    ========================================= -->
+
+    <section id="join">
+
+      <h2>
+        Join Us
+      </h2>
+
+
+      <div class="join-box">
+
+        <h3>
+          We are looking for motivated students
+          and researchers.
+        </h3>
+
+
+        <p>
+          Our group welcomes students and postdoctoral
+          researchers interested in acoustofluidics,
+          acoustic bioelectronics, active metamaterials,
+          non-Hermitian mechanics, topological waves,
+          and spatiotemporal wave control.
+        </p>
+
+
+        <p>
+          Applicants with backgrounds in mechanics,
+          mechanical engineering, acoustics,
+          applied physics, electrical engineering,
+          biomedical engineering, microfluidics,
+          materials science, or related fields
+          are encouraged to contact us.
+        </p>
+
+
+        <p>
+          Please send your CV and a brief description
+          of your research interests by email.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+      © 2026 Qian Wu · Peking University
+
+      <br />
+
+      Department of Mechanics and Engineering Science
+
+    </footer>
+
+
+  </main>
+
+</body>
+</html>
