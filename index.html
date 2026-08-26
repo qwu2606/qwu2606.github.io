@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Qian Wu | Peking University</title>
 
-  <meta
-    name="description"
-    content="Qian Wu, Assistant Professor at Peking University. Research in acoustofluidics, acoustic bioelectronics, active metamaterials, non-Hermitian mechanics, and spatiotemporal wave control."
-  />
+  <meta name="description"
+        content="Qian Wu - Assistant Professor at Peking University. Research in acoustofluidics, acoustic bioelectronics, active metamaterials, non-Hermitian mechanics, topological mechanics, and spatiotemporal wave control.">
 
   <style>
-    /* =========================
-       GLOBAL
-    ========================== */
+
+    /* =====================================================
+       GENERAL
+    ===================================================== */
 
     * {
       box-sizing: border-box;
@@ -27,31 +27,37 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333333;
-      background: #ffffff;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: #333;
+      background: #fff;
       line-height: 1.65;
     }
 
     a {
-      color: #7b1634;
+      color: #7a1632;
       text-decoration: none;
-      transition: 0.2s ease;
     }
 
     a:hover {
-      color: #a3214a;
+      color: #a51f48;
       text-decoration: underline;
     }
 
-    img {
-      max-width: 100%;
+    strong {
+      color: #222;
     }
 
 
-    /* =========================
+    /* =====================================================
        SIDEBAR
-    ========================== */
+    ===================================================== */
 
     .sidebar {
       position: fixed;
@@ -61,16 +67,17 @@
       width: 315px;
       height: 100vh;
 
-      background: #f5f5f4;
-
-      border-right: 1px solid #dedede;
-
       padding: 48px 36px;
+
+      background: #f5f5f4;
+      border-right: 1px solid #ddd;
 
       overflow-y: auto;
     }
 
     .profile-photo {
+      display: block;
+
       width: 165px;
       height: 165px;
 
@@ -78,11 +85,9 @@
 
       border-radius: 50%;
 
-      display: block;
-
       margin-bottom: 24px;
 
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     .sidebar h1 {
@@ -91,86 +96,86 @@
       font-size: 30px;
       font-weight: 400;
 
-      color: #222222;
-
       line-height: 1.2;
 
-      margin-bottom: 6px;
+      color: #222;
+
+      margin-bottom: 5px;
     }
 
     .chinese-name {
       font-family: Georgia, "Times New Roman", serif;
 
-      color: #777777;
-
       font-size: 18px;
+
+      color: #777;
 
       margin-bottom: 18px;
     }
 
     .position {
       font-size: 15px;
-      color: #333333;
 
       line-height: 1.55;
 
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .affiliation {
-      font-size: 14px;
-      color: #666666;
+      font-size: 13.5px;
+
+      color: #666;
 
       line-height: 1.6;
     }
 
     .nav {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin: 28px 0;
     }
 
     .nav a {
       display: block;
 
-      font-size: 15px;
-      color: #444444;
-
       padding: 5px 0;
+
+      color: #444;
+
+      font-size: 14.5px;
     }
 
     .nav a:hover {
-      color: #7b1634;
+      color: #7a1632;
+
       text-decoration: none;
 
       padding-left: 3px;
     }
 
-    .sidebar-bottom {
-      border-top: 1px solid #d8d8d8;
+    .contact {
+      border-top: 1px solid #d7d7d7;
 
-      padding-top: 20px;
+      padding-top: 19px;
 
       font-size: 13.5px;
-      color: #666666;
+
+      color: #666;
     }
 
-    .sidebar-bottom div {
+    .contact div {
       margin-bottom: 7px;
     }
 
 
-    /* =========================
-       MAIN CONTENT
-    ========================== */
+    /* =====================================================
+       MAIN
+    ===================================================== */
 
     .main {
       margin-left: 315px;
 
-      width: calc(100% - 315px);
-
       max-width: 1150px;
 
-      padding: 58px 75px 90px;
+      padding: 58px 75px 100px;
     }
 
     section {
@@ -185,319 +190,286 @@
       font-size: 30px;
       font-weight: 400;
 
-      color: #222222;
+      color: #222;
 
       margin-bottom: 24px;
 
-      border-bottom: 1px solid #dddddd;
-
       padding-bottom: 8px;
+
+      border-bottom: 1px solid #ddd;
     }
 
     h3 {
       font-family: Georgia, "Times New Roman", serif;
 
+      font-size: 21px;
       font-weight: 400;
 
-      color: #222222;
+      color: #222;
+
+      margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
 
-    /* =========================
+    /* =====================================================
        ABOUT
-    ========================== */
+    ===================================================== */
 
-    .about-text {
+    .about {
       font-family: Georgia, "Times New Roman", serif;
 
-      font-size: 19px;
+      font-size: 18.5px;
 
-      line-height: 1.82;
-
-      color: #444444;
+      line-height: 1.8;
 
       max-width: 850px;
-    }
 
-    .about-text strong {
-      color: #222222;
+      color: #444;
     }
 
     .highlight {
-      color: #7b1634;
+      color: #7a1632;
     }
 
     .quick-links {
-      margin-top: 23px;
-    }
-
-    .quick-links a {
-      display: inline-block;
-
-      margin-right: 18px;
+      margin-top: 22px;
 
       font-family: Arial, Helvetica, sans-serif;
 
       font-size: 14px;
     }
 
+    .quick-links a {
+      margin-right: 20px;
+    }
 
-    /* =========================
+
+    /* =====================================================
        RESEARCH
-    ========================== */
+    ===================================================== */
 
     .research-grid {
       display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:
+        repeat(2, minmax(0,1fr));
 
       gap: 22px;
-
-      margin-top: 10px;
     }
 
-    .research-item {
-      border: 1px solid #e1e1e1;
+    .research-card {
+      padding: 24px;
 
-      padding: 25px 25px 22px;
+      border: 1px solid #e0e0e0;
 
-      background: #ffffff;
+      min-height: 190px;
 
-      min-height: 200px;
-
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
     }
 
-    .research-item:hover {
+    .research-card:hover {
       transform: translateY(-3px);
 
-      box-shadow: 0 7px 22px rgba(0, 0, 0, 0.06);
+      box-shadow:
+        0 7px 20px rgba(0,0,0,.06);
     }
 
-    .research-num {
-      font-family: Georgia, "Times New Roman", serif;
+    .research-number {
+      font-family: Georgia, serif;
 
-      font-size: 34px;
+      font-size: 33px;
 
-      color: #c7c7c7;
+      color: #c6c6c6;
 
-      margin-bottom: 7px;
+      margin-bottom: 5px;
     }
 
-    .research-item h3 {
-      font-size: 20px;
-
-      margin-bottom: 10px;
+    .research-card h3 {
+      font-size: 19px;
     }
 
-    .research-item p {
-      color: #666666;
-
+    .research-card p {
       font-size: 14px;
 
-      line-height: 1.65;
+      color: #666;
 
       margin: 0;
     }
 
 
-    /* =========================
-       PUBLICATIONS
-    ========================== */
+    /* =====================================================
+       CV ENTRIES
+    ===================================================== */
 
-    .publication {
-      margin-bottom: 27px;
+    .cv-entry {
+      display: grid;
+
+      grid-template-columns: 125px 1fr;
+
+      gap: 25px;
+
+      margin-bottom: 23px;
     }
 
-    .publication-title {
-      font-size: 16px;
+    .cv-date {
+      color: #888;
 
+      font-size: 14px;
+    }
+
+    .cv-title {
       font-weight: 600;
 
-      color: #2a2a2a;
-
-      line-height: 1.5;
-
-      margin-bottom: 4px;
-    }
-
-    .authors {
-      color: #555555;
-
-      font-size: 14px;
-
-      margin-bottom: 3px;
-    }
-
-    .journal {
-      font-size: 14px;
-
-      color: #777777;
-    }
-
-    .journal em {
-      color: #555555;
-    }
-
-    .paper-link {
-      margin-left: 8px;
-
-      font-size: 13px;
-    }
-
-    .tag {
-      display: inline-block;
-
-      margin-left: 8px;
-
-      padding: 1px 7px;
-
-      border: 1px solid #ceb7be;
-
-      border-radius: 3px;
-
-      color: #7b1634;
-
-      font-size: 11px;
-    }
-
-    .more-link {
-      margin-top: 30px;
-
-      font-size: 14px;
-    }
-
-
-    /* =========================
-       NEWS
-    ========================== */
-
-    .news-item {
-      display: grid;
-
-      grid-template-columns: 110px 1fr;
-
-      column-gap: 20px;
-
-      margin-bottom: 15px;
-
-      font-size: 14px;
-    }
-
-    .news-date {
-      color: #999999;
-    }
-
-    .news-content {
-      color: #444444;
-    }
-
-
-    /* =========================
-       PEOPLE
-    ========================== */
-
-    .people-intro {
-      color: #555555;
-
-      max-width: 800px;
-
-      margin-bottom: 25px;
-    }
-
-    .people-grid {
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 28px;
-    }
-
-    .person {
-      text-align: center;
-    }
-
-    .person img {
-      width: 125px;
-      height: 125px;
-
-      object-fit: cover;
-
-      border-radius: 50%;
-
-      background: #eeeeee;
-
-      margin-bottom: 10px;
-    }
-
-    .person-name {
-      font-family: Georgia, "Times New Roman", serif;
-
-      font-size: 18px;
-
-      color: #222222;
+      color: #282828;
 
       margin-bottom: 2px;
     }
 
-    .person-role {
-      font-size: 13px;
+    .cv-subtitle {
+      font-size: 14px;
 
-      color: #777777;
+      color: #666;
     }
 
 
-    /* =========================
-       JOIN US
-    ========================== */
+    /* =====================================================
+       PUBLICATIONS
+    ===================================================== */
 
-    .join-box {
-      background: #f6f6f5;
+    .publication-note {
+      font-size: 13.5px;
 
-      border-left: 4px solid #7b1634;
+      color: #777;
 
-      padding: 27px 30px;
+      margin-bottom: 28px;
     }
 
-    .join-box h3 {
+    .pub-section-title {
+      font-family: Georgia, serif;
+
       font-size: 21px;
 
-      margin-bottom: 12px;
+      font-weight: 400;
+
+      margin-top: 35px;
+      margin-bottom: 20px;
+
+      color: #333;
     }
 
-    .join-box p {
+    .publication {
+      display: grid;
+
+      grid-template-columns: 35px 1fr;
+
+      gap: 10px;
+
+      margin-bottom: 20px;
+    }
+
+    .pub-number {
+      color: #aaa;
+
+      font-size: 13px;
+
+      padding-top: 2px;
+    }
+
+    .pub-content {
+      font-size: 14px;
+
+      line-height: 1.58;
+    }
+
+    .pub-title {
+      font-weight: 600;
+
+      color: #292929;
+    }
+
+    .pub-journal {
+      font-style: italic;
+
+      color: #555;
+    }
+
+    .status {
+      display: inline-block;
+
+      border: 1px solid #d1bbc1;
+
+      border-radius: 3px;
+
+      padding: 1px 6px;
+
+      margin-left: 6px;
+
+      color: #7a1632;
+
+      font-size: 10.5px;
+
+      vertical-align: 1px;
+    }
+
+
+    /* =====================================================
+       AWARDS
+    ===================================================== */
+
+    .simple-list {
+      list-style: none;
+    }
+
+    .simple-list li {
+      padding: 7px 0;
+
+      border-bottom: 1px solid #eee;
+
       font-size: 14.5px;
-
-      color: #555555;
     }
 
 
-    /* =========================
+    /* =====================================================
+       SERVICE
+    ===================================================== */
+
+    .service-text {
+      font-size: 14px;
+
+      color: #555;
+
+      line-height: 1.75;
+    }
+
+
+    /* =====================================================
        FOOTER
-    ========================== */
+    ===================================================== */
 
     footer {
-      border-top: 1px solid #dddddd;
+      margin-top: 75px;
 
       padding-top: 22px;
 
-      color: #999999;
+      border-top: 1px solid #ddd;
+
+      color: #999;
 
       font-size: 12.5px;
-
-      line-height: 1.6;
     }
 
 
-    /* =========================
-       RESPONSIVE
-    ========================== */
+    /* =====================================================
+       MOBILE
+    ===================================================== */
 
-    @media (max-width: 900px) {
+    @media(max-width: 900px) {
 
       .sidebar {
         position: relative;
@@ -505,64 +477,43 @@
         width: 100%;
         height: auto;
 
-        padding: 38px 28px;
-
         border-right: none;
-        border-bottom: 1px solid #dddddd;
-      }
-
-      .profile-photo {
-        width: 140px;
-        height: 140px;
-      }
-
-      .nav a {
-        display: inline-block;
-
-        margin-right: 18px;
+        border-bottom: 1px solid #ddd;
       }
 
       .main {
         margin-left: 0;
 
-        width: 100%;
-
         padding: 45px 30px 70px;
+      }
+
+      .nav a {
+        display: inline-block;
+
+        margin-right: 16px;
       }
 
       .research-grid {
         grid-template-columns: 1fr;
       }
 
-      .people-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
     }
 
 
-    @media (max-width: 550px) {
+    @media(max-width: 600px) {
 
       .main {
-        padding: 35px 22px 55px;
+        padding: 35px 21px 55px;
       }
 
-      .about-text {
-        font-size: 17px;
-      }
-
-      h2 {
-        font-size: 27px;
-      }
-
-      .people-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .news-item {
+      .cv-entry {
         grid-template-columns: 1fr;
 
-        row-gap: 2px;
+        gap: 2px;
+      }
+
+      .publication {
+        grid-template-columns: 28px 1fr;
       }
 
     }
@@ -571,667 +522,1618 @@
 </head>
 
 
+
 <body>
 
 
-  <!-- ========================================
-       LEFT SIDEBAR
-  ========================================= -->
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
 
-  <aside class="sidebar">
+<aside class="sidebar">
 
-    <!--
-      Upload your portrait to GitHub
-      and name it:
-      profile.jpg
-    -->
+  <img
+    src="profile.jpg"
+    alt="Qian Wu"
+    class="profile-photo"
+  >
 
-    <img
-      class="profile-photo"
-      src="profile.jpg"
-      alt="Qian Wu"
-    />
+  <h1>Qian Wu</h1>
+
+  <div class="chinese-name">
+    吴谦
+  </div>
+
+  <div class="position">
+    Assistant Professor<br>
+    Independent Principal Investigator
+  </div>
+
+  <div class="affiliation">
+    School of Mechanics and Engineering Science<br>
+    Peking University<br>
+    Beijing, China
+  </div>
 
 
-    <h1>Qian Wu</h1>
+  <nav class="nav">
 
-    <div class="chinese-name">
-      吴谦
+    <a href="#about">About</a>
+
+    <a href="#research">Research</a>
+
+    <a href="#experience">Experience</a>
+
+    <a href="#publications">Publications</a>
+
+    <a href="#awards">Awards</a>
+
+    <a href="#teaching">Teaching</a>
+
+    <a href="#service">Service</a>
+
+  </nav>
+
+
+  <div class="contact">
+
+    <div>
+      <a href="mailto:qianwu@pku.edu.cn">
+        qianwu@pku.edu.cn
+      </a>
     </div>
 
-
-    <div class="position">
-      Assistant Professor<br />
-      Principal Investigator
+    <div>
+      <a
+        href="YOUR_GOOGLE_SCHOLAR_LINK"
+        target="_blank"
+      >
+        Google Scholar
+      </a>
     </div>
 
+  </div>
 
-    <div class="affiliation">
-      Department of Mechanics and Engineering Science<br />
-      College of Engineering<br />
-      Peking University
-    </div>
+</aside>
 
 
-    <nav class="nav">
 
-      <a href="#about">
-        About
-      </a>
+<!-- =====================================================
+     MAIN
+===================================================== -->
 
-      <a href="#research">
-        Research
-      </a>
-
-      <a href="#publications">
-        Publications
-      </a>
-
-      <a href="#people">
-        People
-      </a>
-
-      <a href="#news">
-        News
-      </a>
-
-      <a href="#join">
-        Join Us
-      </a>
-
-    </nav>
+<main class="main">
 
 
-    <div class="sidebar-bottom">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-      <div>
-        Beijing, China
+<section id="about">
+
+  <h2>About</h2>
+
+  <div class="about">
+
+    <p>
+      I am an Assistant Professor and independent principal
+      investigator in the
+      <strong>School of Mechanics and Engineering Science</strong>
+      at
+      <strong>Peking University</strong>.
+    </p>
+
+    <p>
+      My research lies at the intersection of
+      <span class="highlight">
+        wave mechanics, active materials, acoustofluidics,
+        and bioengineering
+      </span>.
+      I am particularly interested in creating dynamically
+      programmable systems for controlling waves and matter
+      across spatial and temporal scales.
+    </p>
+
+    <p>
+      Current research directions include
+      acoustofluidics and micro/nano manipulation,
+      acoustic bioelectronics,
+      active and non-Hermitian metamaterials,
+      topological mechanics,
+      and spatiotemporal wave modulation.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESEARCH
+===================================================== -->
+
+<section id="research">
+
+  <h2>Research</h2>
+
+
+  <div class="research-grid">
+
+
+    <div class="research-card">
+
+      <div class="research-number">
+        01
       </div>
 
-      <div>
-        YOUR_EMAIL@pku.edu.cn
-      </div>
-
-      <div>
-        <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank">
-          Google Scholar
-        </a>
-      </div>
-
-      <div>
-        <a href="YOUR_GITHUB_LINK" target="_blank">
-          GitHub
-        </a>
-      </div>
-
-    </div>
-
-  </aside>
-
-
-
-  <!-- ========================================
-       MAIN CONTENT
-  ========================================= -->
-
-  <main class="main">
-
-
-    <!-- ========================================
-         ABOUT
-    ========================================= -->
-
-    <section id="about">
-
-      <h2>
-        About
-      </h2>
-
-
-      <div class="about-text">
-
-        <p>
-          I am an Assistant Professor in the
-          <strong>Department of Mechanics and Engineering Science</strong>
-          at
-          <strong>Peking University</strong>.
-        </p>
-
-
-        <p>
-          My research lies at the intersection of
-          <span class="highlight">
-            wave mechanics, active materials, acoustofluidics,
-            and bioengineering
-          </span>.
-          We develop physical principles and engineered systems
-          for dynamically controlling waves and matter across
-          multiple spatial and temporal scales.
-        </p>
-
-
-        <p>
-          Current research interests include
-          acoustofluidics and acoustic manipulation,
-          acoustic bioelectronics,
-          active and non-Hermitian metamaterials,
-          spatiotemporal modulation,
-          and topological wave mechanics.
-        </p>
-
-
-        <div class="quick-links">
-
-          <a href="#research">
-            Research →
-          </a>
-
-          <a href="#publications">
-            Publications →
-          </a>
-
-          <a href="#join">
-            Join the Group →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================
-         RESEARCH
-    ========================================= -->
-
-    <section id="research">
-
-      <h2>
-        Research
-      </h2>
-
-
-      <div class="research-grid">
-
-
-        <div class="research-item">
-
-          <div class="research-num">
-            01
-          </div>
-
-          <h3>
-            Acoustofluidics & Micro/Nano Manipulation
-          </h3>
-
-          <p>
-            Dynamic acoustic fields for manipulating
-            particles, cells, droplets, and micro/nanoscale
-            matter in fluids, with an emphasis on programmable
-            and spatiotemporal control.
-          </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-          <div class="research-num">
-            02
-          </div>
-
-          <h3>
-            Acoustic Bioelectronics
-          </h3>
-
-          <p>
-            Acoustic sensing and actuation platforms that
-            connect electronics, acoustics, and biological
-            systems for mechanobiology, diagnostics,
-            therapeutics, and wearable technologies.
-          </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-          <div class="research-num">
-            03
-          </div>
-
-          <h3>
-            Active & Non-Hermitian Metamaterials
-          </h3>
-
-          <p>
-            Active constitutive control, odd material
-            properties, nonreciprocity, exceptional-point
-            physics, and non-Hermitian wave phenomena in
-            mechanical and acoustic systems.
-          </p>
-
-        </div>
-
-
-        <div class="research-item">
-
-          <div class="research-num">
-            04
-          </div>
-
-          <h3>
-            Spatiotemporal & Topological Wave Mechanics
-          </h3>
-
-          <p>
-            Space-time modulation, frequency conversion,
-            synthetic dimensions, topological states,
-            and programmable transport of elastic and
-            acoustic waves.
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================
-         PUBLICATIONS
-    ========================================= -->
-
-    <section id="publications">
-
-      <h2>
-        Selected Publications
-      </h2>
-
-
-      <!-- PAPER 1 -->
-
-      <div class="publication">
-
-        <div class="publication-title">
-          Spatiotemporal acoustic manipulation for
-          programmable transport of micro- and nanoscale matter
-        </div>
-
-        <div class="authors">
-          Q. Wu et al.
-        </div>
-
-        <div class="journal">
-
-          <em>
-            Science Advances
-          </em>
-
-          <span class="tag">
-            Acoustofluidics
-          </span>
-
-          <a
-            class="paper-link"
-            href="https://www.science.org/doi/10.1126/sciadv.aee2983"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PAPER 2 -->
-
-      <div class="publication">
-
-        <div class="publication-title">
-          Odd mass density in active mechanical metamaterials
-        </div>
-
-        <div class="authors">
-          Q. Wu et al.
-        </div>
-
-        <div class="journal">
-
-          <em>
-            Proceedings of the National Academy of Sciences
-          </em>
-
-          <span class="tag">
-            Odd Materials
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PAPER 3 -->
-
-      <div class="publication">
-
-        <div class="publication-title">
-          Non-Hermitian wave mechanics enabled by
-          active micropolar elasticity
-        </div>
-
-        <div class="authors">
-          Q. Wu et al.
-        </div>
-
-        <div class="journal">
-
-          <em>
-            Nature Communications
-          </em>
-
-          <span class="tag">
-            Non-Hermitian
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PAPER 4 -->
-
-      <div class="publication">
-
-        <div class="publication-title">
-          Active frequency conversion of elastic waves
-          through programmable metamaterials
-        </div>
-
-        <div class="authors">
-          Q. Wu et al.
-        </div>
-
-        <div class="journal">
-
-          <em>
-            Physical Review Letters
-          </em>
-
-          <span class="tag">
-            Active Waves
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- PAPER 5 -->
-
-      <div class="publication">
-
-        <div class="publication-title">
-          Topological wave control and particle manipulation
-          in acoustic systems
-        </div>
-
-        <div class="authors">
-          Q. Wu et al.
-        </div>
-
-        <div class="journal">
-
-          <em>
-            Selected work
-          </em>
-
-          <span class="tag">
-            Topological Waves
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="more-link">
-
-        <a
-          href="YOUR_GOOGLE_SCHOLAR_LINK"
-          target="_blank"
-        >
-          View all publications on Google Scholar →
-        </a>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================
-         PEOPLE
-    ========================================= -->
-
-    <section id="people">
-
-      <h2>
-        People
-      </h2>
-
-
-      <p class="people-intro">
-        We are building an interdisciplinary research group
-        spanning mechanics, acoustics, metamaterials,
-        microfluidics, biomedical engineering, and
-        electrical engineering.
+      <h3>
+        Acoustofluidics & Micro/Nano Manipulation
+      </h3>
+
+      <p>
+        Dynamic acoustic fields for controlling particles,
+        cells, droplets, and micro/nanoscale matter in fluids.
       </p>
 
-
-      <div class="people-grid">
-
-
-        <div class="person">
-
-          <img
-            src="profile.jpg"
-            alt="Qian Wu"
-          />
-
-          <div class="person-name">
-            Qian Wu
-          </div>
-
-          <div class="person-role">
-            Principal Investigator
-          </div>
-
-        </div>
+    </div>
 
 
-        <!--
-        Uncomment when you have students.
+    <div class="research-card">
 
-        <div class="person">
-
-          <img
-            src="student1.jpg"
-            alt="Student Name"
-          />
-
-          <div class="person-name">
-            Student Name
-          </div>
-
-          <div class="person-role">
-            Ph.D. Student
-          </div>
-
-        </div>
-        -->
-
-
-        <!--
-        <div class="person">
-
-          <img
-            src="student2.jpg"
-            alt="Student Name"
-          />
-
-          <div class="person-name">
-            Student Name
-          </div>
-
-          <div class="person-role">
-            Graduate Student
-          </div>
-
-        </div>
-        -->
-
-
+      <div class="research-number">
+        02
       </div>
 
-    </section>
+      <h3>
+        Acoustic Bioelectronics
+      </h3>
+
+      <p>
+        Acoustic sensing, actuation, mechanobiology,
+        wearable systems, and interfaces between
+        electronics and biological systems.
+      </p>
+
+    </div>
 
 
+    <div class="research-card">
 
-    <!-- ========================================
-         NEWS
-    ========================================= -->
-
-    <section id="news">
-
-      <h2>
-        News
-      </h2>
-
-
-      <div class="news-item">
-
-        <div class="news-date">
-          Aug 2026
-        </div>
-
-        <div class="news-content">
-          Our group website is online.
-        </div>
-
+      <div class="research-number">
+        03
       </div>
 
+      <h3>
+        Active & Non-Hermitian Metamaterials
+      </h3>
 
-      <div class="news-item">
+      <p>
+        Odd constitutive properties, active feedback,
+        nonreciprocity, exceptional points,
+        and non-Hermitian wave dynamics.
+      </p>
 
-        <div class="news-date">
-          2026
-        </div>
+    </div>
 
-        <div class="news-content">
-          We are recruiting motivated graduate students
-          and postdoctoral researchers.
-        </div>
 
+    <div class="research-card">
+
+      <div class="research-number">
+        04
       </div>
 
+      <h3>
+        Topological & Spatiotemporal Wave Mechanics
+      </h3>
 
-      <!--
-      COPY THIS BLOCK FOR NEW NEWS
+      <p>
+        Topological states, space-time modulation,
+        temporal interfaces, frequency conversion,
+        and programmable elastic and acoustic waves.
+      </p>
 
-      <div class="news-item">
-
-        <div class="news-date">
-          Sep 2026
-        </div>
-
-        <div class="news-content">
-          Your news goes here.
-        </div>
-
-      </div>
-      -->
+    </div>
 
 
-    </section>
+  </div>
+
+</section>
 
 
 
-    <!-- ========================================
-         JOIN US
-    ========================================= -->
+<!-- =====================================================
+     EDUCATION + EXPERIENCE
+===================================================== -->
 
-    <section id="join">
+<section id="experience">
 
-      <h2>
-        Join Us
-      </h2>
+  <h2>Education & Experience</h2>
 
 
-      <div class="join-box">
-
-        <h3>
-          We are looking for motivated students
-          and researchers.
-        </h3>
+  <h3>Professional Experience</h3>
 
 
-        <p>
-          Our group welcomes students and postdoctoral
-          researchers interested in acoustofluidics,
-          acoustic bioelectronics, active metamaterials,
-          non-Hermitian mechanics, topological waves,
-          and spatiotemporal wave control.
-        </p>
+  <div class="cv-entry">
 
+    <div class="cv-date">
+      May 2026 –
+    </div>
 
-        <p>
-          Applicants with backgrounds in mechanics,
-          mechanical engineering, acoustics,
-          applied physics, electrical engineering,
-          biomedical engineering, microfluidics,
-          materials science, or related fields
-          are encouraged to contact us.
-        </p>
+    <div>
 
-
-        <p>
-          Please send your CV and a brief description
-          of your research interests by email.
-        </p>
-
+      <div class="cv-title">
+        Assistant Professor · Independent PI
       </div>
 
-    </section>
+      <div class="cv-subtitle">
+        School of Mechanics and Engineering Science,
+        Peking University
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2025 – 2026
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        Postdoctoral Associate
+      </div>
+
+      <div class="cv-subtitle">
+        Department of Mechanical Engineering,
+        Boston University · with Harold S. Park
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2024 – 2025
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        Postdoctoral Associate
+      </div>
+
+      <div class="cv-subtitle">
+        Thomas Lord Department of Mechanical Engineering
+        and Materials Science, Duke University ·
+        with Tony J. Huang
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2022 – 2024
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        Postdoctoral Fellow
+      </div>
+
+      <div class="cv-subtitle">
+        Department of Mechanical and Aerospace Engineering,
+        University of Missouri · with Guoliang Huang
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <br>
+
+  <h3>Education</h3>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2022
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        Ph.D. in Mechanical Engineering
+      </div>
+
+      <div class="cv-subtitle">
+        University of Missouri
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2015
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        M.S. in Condensed Matter Physics
+      </div>
+
+      <div class="cv-subtitle">
+        Tongji University
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cv-entry">
+
+    <div class="cv-date">
+      2012
+    </div>
+
+    <div>
+
+      <div class="cv-title">
+        B.E. in Mechatronics
+      </div>
+
+      <div class="cv-subtitle">
+        East China Jiaotong University
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
-    <!-- ========================================
-         FOOTER
-    ========================================= -->
+<!-- =====================================================
+     PUBLICATIONS
+===================================================== -->
 
-    <footer>
+<section id="publications">
 
-      © 2026 Qian Wu · Peking University
+  <h2>Publications</h2>
 
-      <br />
+  <div class="publication-note">
 
-      Department of Mechanics and Engineering Science
+    * Equal contribution · † Corresponding author
 
-    </footer>
+    &nbsp; · &nbsp;
+
+    <a
+      href="YOUR_GOOGLE_SCHOLAR_LINK"
+      target="_blank"
+    >
+      Google Scholar →
+    </a>
+
+  </div>
 
 
-  </main>
+
+  <div class="pub-section-title">
+    Representative Publications
+  </div>
+
+
+
+  <div class="publication">
+    <div class="pub-number">1.</div>
+    <div class="pub-content">
+      Q. Wu*, Z. T. Ma*, K. C. Yang*, H. J. Xu,
+      J. D. H. Mai, M. Y. Liu, T. Naquin, M. Y. Liu,
+      Y. Chen†, J. Rufo, J. T. Ma, X. C. Xu,
+      Y. Ling, E. Dowell, T. J. Huang†.
+      <span class="pub-title">
+        “Space-time acoustofluidic tweezers for dynamic
+        and selective manipulation of microparticles.”
+      </span>
+      <span class="pub-journal">Science Advances</span>
+      12, eaee2983 (2026).
+      <a
+        href="https://www.science.org/doi/10.1126/sciadv.aee2983"
+        target="_blank"
+      >
+        [Paper]
+      </a>
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">2.</div>
+    <div class="pub-content">
+      Q. Wu, S. Y. Wang, H. H. Qian, Y. Z. Wang,
+      G. L. Huang†.
+      <span class="pub-title">
+        “Understanding of topological mode and skin mode
+        morphing in 1D and 2D non-Hermitian
+        resonance-based meta-lattices.”
+      </span>
+      <span class="pub-journal">
+        Journal of the Mechanics and Physics of Solids
+      </span>
+      193, 105907 (2024).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">3.</div>
+    <div class="pub-content">
+      Q. Wu*, X. C. Xu*, H. H. Qian*, S. Y. Wang,
+      R. Zhu, Z. Yan, H. B. Ma, Y. Y. Chen†,
+      G. L. Huang†.
+      <span class="pub-title">
+        “Active metamaterials for realizing odd mass density.”
+      </span>
+      <span class="pub-journal">
+        Proceedings of the National Academy of Sciences
+      </span>
+      120, e2209829120 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">4.</div>
+    <div class="pub-content">
+      S. Y. Wang*, Z. Hu*, Q. Wu*, H. Chen,
+      E. Prodan, R. Zhu†, G. L. Huang†.
+      <span class="pub-title">
+        “Smart patterning for topological pumping
+        of elastic surface waves.”
+      </span>
+      <span class="pub-journal">Science Advances</span>
+      9, eadh431 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">5.</div>
+    <div class="pub-content">
+      Q. Wu*, X. D. Zhang*, P. Shivashankar,
+      Y. Y. Chen†, G. L. Huang†.
+      <span class="pub-title">
+        “Independent flexural wave frequency conversion
+        by a linear active metalayer.”
+      </span>
+      <span class="pub-journal">
+        Physical Review Letters
+      </span>
+      128, 244301 (2022).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">6.</div>
+    <div class="pub-content">
+      Q. Wu, H. Chen, H. Nassar, G. L. Huang†.
+      <span class="pub-title">
+        “Non-reciprocal Rayleigh wave propagation
+        in space–time modulated surface.”
+      </span>
+      <span class="pub-journal">
+        Journal of the Mechanics and Physics of Solids
+      </span>
+      146, 104196 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">7.</div>
+    <div class="pub-content">
+      X. C. Xu*, Q. Wu*, H. Chen*, H. Nassar,
+      Y. Y. Chen, A. Norris, M. Haberman,
+      G. L. Huang†.
+      <span class="pub-title">
+        “Physical observation of a robust acoustic
+        pumping in waveguides with dynamic boundary.”
+      </span>
+      <span class="pub-journal">
+        Physical Review Letters
+      </span>
+      125, 253901 (2020).
+      Editors’ Suggestion.
+    </div>
+  </div>
+
+
+
+  <!-- =====================================================
+       ADDITIONAL PUBLICATIONS
+  ===================================================== -->
+
+  <div class="pub-section-title">
+    Additional Publications & Manuscripts
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">8.</div>
+    <div class="pub-content">
+      Q. Wu, G. L. Huang†.
+      <span class="pub-title">
+        “Higher-order topological pumping in
+        three-dimensional mechanical metamaterials.”
+      </span>
+      <span class="status">To be submitted</span>
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">9.</div>
+    <div class="pub-content">
+      K. Jin*, X. C. Xu*, Y. J. Lu, K. C. Yang,
+      R. Y. Zhong, Q. Wu, Y. Chen, Z. T. Ma,
+      E. H. Dowell, T. J. Huang†.
+      <span class="pub-title">
+        “Transformation acoustofluidics for surface acoustic
+        wave cloaking and particle manipulation.”
+      </span>
+      <span class="pub-journal">npj Acoustics</span>
+      <span class="status">Under review</span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">10.</div>
+    <div class="pub-content">
+      Z. Li, Q. Wu†.
+      <span class="pub-title">
+        “Fourier-based reconstruction of asymmetric complex
+        dispersions in active phononic crystals.”
+      </span>
+      <span class="status">To be submitted</span>
+      to <span class="pub-journal">Extreme Mechanics Letters</span>
+      (2027).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">11.</div>
+    <div class="pub-content">
+      Q. Wu, S. Y. Wang, H. H. Qian, G. L. Huang†.
+      <span class="pub-title">
+        “A generalized non-Hermitian mechanical metamaterial
+        for independent flexural wave control.”
+      </span>
+      <span class="status">To be submitted</span>
+      to
+      <span class="pub-journal">
+        Journal of the Mechanics and Physics of Solids
+      </span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">12.</div>
+    <div class="pub-content">
+      Z. T. Ma*, H. J. Xu*, Q. Wu*, J. P. Xia,
+      K. Li, A. Jain, B. Lu, J. T. Ma, M. Y. Liu,
+      Y. He, M. Bazan, S. L. Li, R. Kahan,
+      K. C. Yang, X. C. Xu, T. Naquin, Z. Y. Zhao,
+      Y. Chen, L. P. Lee, T. J. Huang†.
+      <span class="pub-title">
+        “Multifunctional acoustic-fluidic device for
+        cell enrichment and cell uptake.”
+      </span>
+      <span class="status">To be submitted</span>
+      to <span class="pub-journal">Nature Communications</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">13.</div>
+    <div class="pub-content">
+      Z. T. Ma*, K. C. Yang*, H. J. Xu*, A. Jain,
+      J. Luo, A. Agahtehrani, A. Mishra, R. Kahan,
+      Y. He, Z. Y. Zhao, Y. Q. Wu, Y. Chen,
+      M. Y. Liu, S. L. Li, Q. Wu, T. J. Huang†.
+      <span class="pub-title">
+        “Acoustic tweezers-enabled generation of monodisperse
+        aerosols for deep lung deposition.”
+      </span>
+      <span class="pub-journal">Lab on a Chip</span>
+      <span class="status">Under review</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">14.</div>
+    <div class="pub-content">
+      K. Li*, K. C. Yang*, H. J. Xu, Z. Y. Zhao,
+      B. Jim-Smith, Y. Chen, Y. He, J. Rufo,
+      J. D. H. Mai, Y. J. Lu, Y. Q. Wu, J. P. Xia,
+      M. Y. Liu, R. Y. Zhong, Q. Wu, L. Lan†,
+      L. P. Lee†, T. J. Huang†.
+      <span class="pub-title">
+        “Synchronized oxidative programming in local tumors
+        triggers systemic antitumor immunity.”
+      </span>
+      <span class="pub-journal">
+        Nature Biomedical Engineering
+      </span>
+      <span class="status">Under review</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">15.</div>
+    <div class="pub-content">
+      H. H. Qian*, J. J. Chen*, Q. Wu*, N. Shao,
+      S. Y. Wang†, G. L. Huang†.
+      <span class="pub-title">
+        “Non-Hermitian morphing of topological modes
+        in elastic continua.”
+      </span>
+      <span class="pub-journal">Nature Physics</span>
+      <span class="status">Under review</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">16.</div>
+    <div class="pub-content">
+      M. Y. Liu*, J. Huayta*, R. Y. Zhong,
+      S. J. Yang, K. Morton, J. Mai, J. P. Xia,
+      K. C. Yang, K. Jin, Z. T. Ma, Y. Q. Wu,
+      Q. Wu, X. C. Xu, Y. He, Y. Chen, P. Su,
+      L. P. Lee†, J. Meyer†, T. J. Huang†.
+      <span class="pub-title">
+        “Multi-metric quantification of pollution and life
+        cycle sustainability by acousto-optofluidic
+        C. elegans examination and toxicity testing:
+        ACE-ToxTest.”
+      </span>
+      <span class="pub-journal">
+        Nature Chemical Engineering
+      </span>
+      <span class="status">Under review</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">17.</div>
+    <div class="pub-content">
+      J. X. Pan, Q. Wu, Q. Peng, Y. H. Du,
+      X. Huang, G. L. Huang, Y. G. Wei, X. M. Liu†.
+      <span class="pub-title">
+        “Decoding impact fracture patterns: A universal
+        scaling law linking impactor properties
+        to crack morphology.”
+      </span>
+      <span class="pub-journal">
+        Physical Review Letters
+      </span>
+      <span class="status">Under review</span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">18.</div>
+    <div class="pub-content">
+      K. C. Yang*, N. V. Phan*, J. L. Thomas,
+      Y. Yang, A. Paskinsky, T. Naquin,
+      A. Agahtehrani, Z. Y. Zhao, A. Adams,
+      Y. Q. Wu, K. Jin, Q. Wu, T. Segura†,
+      T. J. Huang†.
+      <span class="pub-title">
+        “Acoustofluidic stimulation modulation of astrocytes
+        increases extracellular vesicle secretion.”
+      </span>
+      <span class="status">In preparation</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">19.</div>
+    <div class="pub-content">
+      K. C. Yang, P. Z. Liu, R. Y. Zhong,
+      J. Mai, T. Naquin, A. Agahtehrani,
+      P. R. Zhang, K. Jin, H. D. Zhu, Y. Chen,
+      J. P. Xia, Y. He, Z. T. Ma, Q. Wu,
+      X. C. Xu, T. J. Huang†.
+      <span class="pub-title">
+        “Reconfigurable acoustofluidic nanotweezers for
+        high-spatiotemporal-resolution single nanoparticle
+        manipulation.”
+      </span>
+      <span class="status">In preparation</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">20.</div>
+    <div class="pub-content">
+      J. Q. Zhang*, D. C. Wu*, T. F. Ma†,
+      C. B. W. Lou, B. W. Wu, S. H. Z. Li, Q. Wu.
+      <span class="pub-title">
+        “Topological Skyrmion-type microparticle manipulation
+        based on surface acoustic wave phase modulations.”
+      </span>
+      <span class="status">To be submitted</span>
+      to <span class="pub-journal">Lab on a Chip</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">21.</div>
+    <div class="pub-content">
+      W. Cheng, H. H. Qian, J. J. Chen,
+      Q. Wu, G. L. Huang†.
+      <span class="pub-title">
+        “Harnessing self-sustained skin modes in nonlinear
+        non-Hermitian metastructures for autonomous
+        robotic locomotion.”
+      </span>
+      <span class="pub-journal">
+        Journal of the Mechanics and Physics of Solids
+      </span>
+      <span class="status">Under review</span>.
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">22.</div>
+    <div class="pub-content">
+      K. C. Yang*, W. Peele, P. Z. Liu, J. P. Xia,
+      R. Y. Zhong, V. Dandey, K. Jin, K. Sharma,
+      A. J. Watson, Y. Chen, A. Agahtehrani,
+      P. R. Zhang, Z. H. Tian, S. J. Yang,
+      M. Y. Liu, E. Viverette, X. C. Xu, Q. Wu,
+      M. Borgnia†, L. P. Lee†, T. J. Huang†.
+      <span class="pub-title">
+        “Acoustofluidic cryo-EM enables in situ particle
+        manipulation for uniform, high-quality specimen
+        preparation.”
+      </span>
+      <span class="pub-journal">Science Advances</span>
+      <span class="status">Accepted</span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">23.</div>
+    <div class="pub-content">
+      Q. Wu, Y. He, J. P. Xia, J. Rufo,
+      Y. Chen, L. P. Lee†, T. J. Huang†.
+      <span class="pub-title">
+        “Micro- and nanoscale acoustic bioelectronics:
+        Engineering contactless sensing, actuation,
+        and wearable systems.”
+      </span>
+      <span class="status">To be submitted</span>
+      to
+      <span class="pub-journal">
+        Nature Reviews Electrical Engineering
+      </span>
+      (2027).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">24.</div>
+    <div class="pub-content">
+      Q. Wu*, Z. T. Ma*, K. C. Yang, K. Jin,
+      T. Naquin, H. J. Xu, S. G. Zhao,
+      Y. Ling, Y. Chen, T. J. Huang†.
+      <span class="pub-title">
+        “Demonstration of topological acoustic tweezing
+        in a chip-scale nonsymmorphic crystal.”
+      </span>
+      <span class="status">To be submitted</span>
+      to <span class="pub-journal">Science Advances</span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">25.</div>
+    <div class="pub-content">
+      Y. Ling*, Z. Y. Zhao*, K. C. Yang, Z. T. Ma,
+      J. Rich, J. Mai, K. Li, Y. Chen, Y. He,
+      M. Y. Liu, R. Y. Zhong, J. P. Xia, Q. Wu,
+      S. G. Zhao, G. Yao, E. Dowell, L. P. Lee†,
+      T. J. Huang†.
+      <span class="pub-title">
+        “A wearable dual-frequency ultrasound microneedle
+        patch for deep transdermal drug delivery.”
+      </span>
+      <span class="pub-journal">Nature Communications</span>
+      <span class="status">In revision</span>
+      (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">26.</div>
+    <div class="pub-content">
+      T. Naquin, C. Naquin, Q. Wu, Y. Chen,
+      A. Canning, K. C. Yang, Y. Li, S. G. Zhao,
+      Y. Ling, Z. T. Ma, K. Jin, Y. He,
+      S. J. Yang†, L. P. Lee†, T. J. Huang†.
+      <span class="pub-title">
+        “Integrated microfluidic biosensors: shaping the
+        future of quantitative life sciences and on-chip
+        molecular diagnostics.”
+      </span>
+      <span class="pub-journal">Lab on a Chip</span>
+      26, 3617 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">27.</div>
+    <div class="pub-content">
+      H. H. Qian, J. J. Chen†, S. Y. Wang,
+      N. Shao, Q. Wu, G. L. Huang†.
+      <span class="pub-title">
+        “Non-Hermitian topological enhanced electromechanical
+        impedance method for detecting structural damage.”
+      </span>
+      <span class="pub-journal">
+        International Journal of Mechanical Sciences
+      </span>
+      321, 111639 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">28.</div>
+    <div class="pub-content">
+      Y. Q. Wu, M. Y. Liu, K. Li, S. L. Li,
+      L. Y. Phoon, J. Mai, Y. Chen, W. Yan,
+      S. N. Lan, J. Rufo, G. Milford, Y. He,
+      Q. Wu, S. J. Yang, L. Lan, S. J. Benkovic†,
+      T. J. Huang†.
+      <span class="pub-title">
+        “SonoPIN enables precise, noninvasive,
+        and efficient intracellular delivery of PROTACs.”
+      </span>
+      <span class="pub-journal">
+        Proceedings of the National Academy of Sciences
+      </span>
+      123, e2534439123 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">29.</div>
+    <div class="pub-content">
+      Y. Ling, Y. J. Lu, J. Rich, M. Y. Liu,
+      X. C. Xu, T. Naquin, Y. Chen, S. L. Li,
+      R. Y. Zhong, K. C. Yang, S. G. Zhao,
+      Q. Wu, K. Jin, T. J. Huang†.
+      <span class="pub-title">
+        “Machine learning–driven design of engineered cilia
+        enables hybrid operations in acoustic microrobots.”
+      </span>
+      <span class="pub-journal">Nature Communications</span>
+      17, 3870 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">30.</div>
+    <div class="pub-content">
+      Y. Z. Wang*, J. L. Zhao*, Q. Wu, X. M. Zhou,
+      W. Q. Chen, H. Jiang, M. Wang, G. L. Huang†.
+      <span class="pub-title">
+        “A controllable anti-P-pseudo-Hermitian mechanical
+        system for ultrasensitive sensing.”
+      </span>
+      <span class="pub-journal">Physical Review Letters</span>
+      136, 096101 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">31.</div>
+    <div class="pub-content">
+      K. C. Yang*, R. Y. Zhong*, K. Li*, J. Mai,
+      P. Z. Liu, Y. He, J. Rich, Y. Chen, J. Wang,
+      Z. T. Ma, X. C. Xu, Q. Wu, T. J. Huang†.
+      <span class="pub-title">
+        “Precision acoustofluidics for high-throughput
+        mechanobiology in suspension cells.”
+      </span>
+      <span class="pub-journal">Science Advances</span>
+      12, eady1136 (2026).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">32.</div>
+    <div class="pub-content">
+      R. Y. Zhong*, K. Li*, K. C. Yang*, Q. Wu,
+      J. D. H. Mai, J. Rich, Y. Chen, X. C. Xu,
+      J. P. Xia, N. Upreti, K. Jin, S. J. Yang,
+      M. Y. Liu, T. J. Huang†.
+      <span class="pub-title">
+        “Enhancing cancer therapy via acoustics:
+        chemotherapy-enhanced tunable acoustofluidic
+        permeabilization (ChemoTAP).”
+      </span>
+      <span class="pub-journal">Lab on a Chip</span>
+      25, 6314 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">33.</div>
+    <div class="pub-content">
+      Y. B. Jin† et al., including Q. Wu.
+      <span class="pub-title">
+        “The 2024 phononic crystal roadmap.”
+      </span>
+      <span class="pub-journal">
+        Journal of Physics D: Applied Physics
+      </span>
+      58, 113001 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">34.</div>
+    <div class="pub-content">
+      S. Y. Wang*, N. Shao*, H. Chen, J. J. Chen,
+      H. H. Qian, Q. Wu, H. L. Duan,
+      A. Alu†, G. L. Huang†.
+      <span class="pub-title">
+        “Experimental realization of temporal refraction
+        and reflection in elastic beams.”
+      </span>
+      <span class="pub-journal">Nature Communications</span>
+      16, 9520 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">35.</div>
+    <div class="pub-content">
+      Z. T. Ma et al., including Q. Wu,
+      L. P. Lee†, T. J. Huang†, E. T. Chambers†.
+      <span class="pub-title">
+        “Acoustofluidic system for targeted antibody removal
+        in transplantation: Enabling small-volume
+        therapeutic apheresis.”
+      </span>
+      <span class="pub-journal">Science Advances</span>
+      11, eady3262 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">36.</div>
+    <div class="pub-content">
+      S. Q. Wang, Z. G. Cao†, S. Y. Wang†, Q. Wu,
+      J. J. Chen, Y. Q. Cai, G. L. Huang†.
+      <span class="pub-title">
+        “Dissipative elastic metasurfaces for Rayleigh wave
+        manipulation with subwavelength resonators.”
+      </span>
+      <span class="pub-journal">
+        International Journal of Mechanical Sciences
+      </span>
+      296, 110233 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">37.</div>
+    <div class="pub-content">
+      T. Yang, Q. Wu, S. Y. Wang, R. Y. Wei,
+      Y. Liu, H. Jiang†, G. L. Huang†.
+      <span class="pub-title">
+        “Observation of multiple corner states in
+        right-angled trapezoidal phononic crystals
+        with glide symmetry.”
+      </span>
+      <span class="pub-journal">
+        International Journal of Mechanical Sciences
+      </span>
+      293, 110144 (2025).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">38.</div>
+    <div class="pub-content">
+      L. Yang, L. Gao, R. Jiang, W. He, J. Wang,
+      Q. Wu, Y. Sun, Y. Q. Chen†.
+      <span class="pub-title">
+        “Electrically switchable metamaterial analogue
+        to electromagnetically induced transparency.”
+      </span>
+      <span class="pub-journal">Physica B</span>
+      694, 416458 (2024).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">39.</div>
+    <div class="pub-content">
+      R. Jiang, L. Gao, L. Yang, J. Wang,
+      Q. Wu, Y. Sun, Y. Q. Chen†.
+      <span class="pub-title">
+        “Electromagnetic modulating action in a microstrip
+        cavity with embedded two detuned resonators.”
+      </span>
+      <span class="pub-journal">Journal of Applied Physics</span>
+      136, 105301 (2024).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">40.</div>
+    <div class="pub-content">
+      R. Jiang, L. Gao, L. Yang, J. Wang,
+      Q. Wu, Y. Sun, Y. Q. Chen†.
+      <span class="pub-title">
+        “Active control of Fano resonance in
+        side-coupled resonator-cavity systems.”
+      </span>
+      <span class="pub-journal">Physica Scripta</span>
+      99, 055553 (2024).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">41.</div>
+    <div class="pub-content">
+      W. J. Zhou, S. Wang, Q. Wu, X. C. Xu,
+      X. Huang, G. L. Huang†, Y. Liu†, Z. Fan†.
+      <span class="pub-title">
+        “An inverse design paradigm of multi-functional
+        elastic metasurface via data-driven machine learning.”
+      </span>
+      <span class="pub-journal">Materials & Design</span>
+      226, 111560 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">42.</div>
+    <div class="pub-content">
+      Y. Z. Wang, Q. Wu, Y. R. Tian, G. L. Huang†.
+      <span class="pub-title">
+        “Non-Hermitian wave dynamics of odd plates:
+        microstructure design and theoretical modelling.”
+      </span>
+      <span class="pub-journal">
+        Journal of the Mechanics and Physics of Solids
+      </span>
+      182, 105462 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">43.</div>
+    <div class="pub-content">
+      Q. Wu*, H. H. Qian*, Y. Y. Chen†,
+      G. L. Huang†.
+      <span class="pub-title">
+        “Dynamic phononic crystals with spatially
+        and temporally modulated circuit networks.”
+      </span>
+      <span class="pub-journal">Acta Mechanica Sinica</span>
+      39, 723007 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">44.</div>
+    <div class="pub-content">
+      L. Gao, L. Yang, Y. Ding†, Y. Fang,
+      X. Wu, J. Ran, Q. Wu, Y. Sun, Y. Q. Chen†.
+      <span class="pub-title">
+        “Nonlinearly tunable Fano resonance in photonic
+        crystal heterostructure with embedded a
+        varactor-loaded split ring resonator.”
+      </span>
+      <span class="pub-journal">Journal of Applied Physics</span>
+      134, 085304 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">45.</div>
+    <div class="pub-content">
+      Y. Ling, G. G. Zhao, Y. Su, Q. Wu, Y. Xu,
+      Z. Chen, B. Arends, O. Emeje, G. L. Huang,
+      J. Xie, Z. Yan†.
+      <span class="pub-title">
+        “Skin-Inspired Porous Mesh Bioelectronics with
+        Built-In Multifunctionality for Concurrently
+        Monitoring Heart Electrical and Mechanical Functions.”
+      </span>
+      <span class="pub-journal">
+        Advanced Functional Materials
+      </span>
+      2302681 (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">46.</div>
+    <div class="pub-content">
+      Z. Jiang, L. Gao, Y. Ding†, Y. Fang,
+      X. Wu, Q. Wu, Y. Sun, Y. Q. Chen†.
+      <span class="pub-title">
+        “Bistable switch based on tunable Fano resonance
+        in coupled resonator-cavity structure.”
+      </span>
+      <span class="pub-journal">Electronics</span>
+      12(9) (2023).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">47.</div>
+    <div class="pub-content">
+      Q. Wu, P. Shivashankar, X. C. Xu,
+      Y. Y. Chen, G. L. Huang†.
+      <span class="pub-title">
+        “Dispersion engineering and non-reciprocity
+        in a nonlocal micropolar metabeam.”
+      </span>
+      <span class="pub-journal">
+        Journal of Composite Materials
+      </span>
+      57(4), 771–782 (2022).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">48.</div>
+    <div class="pub-content">
+      S. Lyu, Z. Wu†, X. Shi, Q. Wu.
+      <span class="pub-title">
+        “Optical Fiber Biosensors for Protein Detection:
+        A Review.”
+      </span>
+      <span class="pub-journal">Photonics</span>
+      9(12), 987 (2022).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">49.</div>
+    <div class="pub-content">
+      Q. Wu, G. L. Huang†.
+      <span class="pub-title">
+        “Omnidirectional wave polarization manipulation
+        in isotropic polar solids.”
+      </span>
+      <span class="pub-journal">
+        International Journal of Solids and Structures
+      </span>
+      241, 111481 (2022).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">50.</div>
+    <div class="pub-content">
+      S. Yang, Y. Ling, Q. Wu, H. Zhang, Z. Yan,
+      G. L. Huang, J. Lin, C. X. Wan†.
+      <span class="pub-title">
+        “Lignin-derived Porous Graphene for Wearable
+        and Ultrasensitive Strain Sensors.”
+      </span>
+      <span class="pub-journal">
+        Journal of Materials Chemistry C
+      </span>
+      10(32), 11730–11738 (2022).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">51.</div>
+    <div class="pub-content">
+      Q. Wu, G. L. Huang†.
+      <span class="pub-title">
+        “A micropolar metabeam with nonlocal feedback
+        control circuits.”
+      </span>
+      ASME IMECE2021,
+      IMECE2021-70609, V001T01A015 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">52.</div>
+    <div class="pub-content">
+      X. C. Xu, Q. Wu, Y. Pang, Y. Cao,
+      Y. Fang, G. L. Huang†, C. Y. Cao†.
+      <span class="pub-title">
+        “Multifunctional metamaterials enabled by triboelectric
+        nanogenerators for energy harvesting and
+        vibration reduction.”
+      </span>
+      <span class="pub-journal">
+        Advanced Functional Materials
+      </span>
+      2107896 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">53.</div>
+    <div class="pub-content">
+      H. Nguyen*, Q. Wu*, H. Chen, J. J. Chen,
+      Y. K. Yu, S. Tracy, G. L. Huang†.
+      <span class="pub-title">
+        “A Fano-based acoustic metamaterial for
+        ultra-broadband sound barriers.”
+      </span>
+      <span class="pub-journal">
+        Proceedings of the Royal Society A
+      </span>
+      477, 20210024 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">54.</div>
+    <div class="pub-content">
+      Q. Wu, H. Chen, X. P. Li, G. L. Huang†.
+      <span class="pub-title">
+        “In-plane second-order topologically protected
+        states in elastic Kagome lattices.”
+      </span>
+      <span class="pub-journal">
+        Physical Review Applied
+      </span>
+      14, 014084 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">55.</div>
+    <div class="pub-content">
+      H. Chen*, H. K. Zhang*, Q. Wu, Y. Huang,
+      H. Nguyen, E. Prodan†, X. M. Zhou†,
+      G. L. Huang†.
+      <span class="pub-title">
+        “Creating synthetic spaces for higher-order
+        topological sound transport.”
+      </span>
+      <span class="pub-journal">Nature Communications</span>
+      12, 1–10 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">56.</div>
+    <div class="pub-content">
+      H. Nguyen*, Q. Wu*, J. J. Chen, Y. K. Yu,
+      H. Chen, S. Tracy, G. L. Huang†.
+      <span class="pub-title">
+        “A broadband acoustic panel based on double-layer
+        membrane-type metamaterials.”
+      </span>
+      <span class="pub-journal">Applied Physics Letters</span>
+      118, 184101 (2021).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">57.</div>
+    <div class="pub-content">
+      H. Nguyen*, Q. Wu*, X. C. Xu, H. Chen,
+      S. Tracy, G. L. Huang†.
+      <span class="pub-title">
+        “Broadband acoustic silencer with ventilation
+        based on slit-type Helmholtz resonators.”
+      </span>
+      <span class="pub-journal">Applied Physics Letters</span>
+      117, 134103 (2020).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">58.</div>
+    <div class="pub-content">
+      Q. Wu, Y. Y. Chen, G. L. Huang†.
+      <span class="pub-title">
+        “Asymmetric scattering of flexural waves
+        in a parity-time symmetric metamaterial beam.”
+      </span>
+      <span class="pub-journal">
+        Journal of the Acoustical Society of America
+      </span>
+      146, 850–862 (2019).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">59.</div>
+    <div class="pub-content">
+      Q. Wu, Y. H. Li†, Y. Q. Chen, Y. Sun,
+      K. Fang, Y. Zhang, H. Chen, Z. N. Chen.
+      <span class="pub-title">
+        “Enhanced wireless power transfer using magnetostatic
+        volume modes in anisotropic magnetic metamaterials.”
+      </span>
+      IEEE IESES, 17733286 (2018).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">60.</div>
+    <div class="pub-content">
+      Q. Wu, Y. H. Li†, N. Gao, Y. Fan,
+      Y. Q. Chen, K. Fang, Y. W. Zhang, H. Chen.
+      <span class="pub-title">
+        “Wireless power transfer based on magnetic
+        metamaterials consisting of assembled
+        ultra-subwavelength meta-atoms.”
+      </span>
+      <span class="pub-journal">Europhysics Letters</span>
+      109, 68005 (2015).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">61.</div>
+    <div class="pub-content">
+      Y. Q. Chen, Y. H. Li†, Q. Wu, H. T. Jiang,
+      Y. Zhang, H. Chen.
+      <span class="pub-title">
+        “Quantum well effect based on hybridization
+        bandgap in deep sub-wavelength coupled meta-atoms.”
+      </span>
+      <span class="pub-journal">Physica B</span>
+      472, 1–5 (2015).
+    </div>
+  </div>
+
+
+  <div class="publication">
+    <div class="pub-number">62.</div>
+    <div class="pub-content">
+      Y. Q. Chen, Y. H. Li†, Q. Wu, H. T. Jiang,
+      Y. Zhang, H. Chen.
+      <span class="pub-title">
+        “Tuning the hybridization bandgap by metamolecules
+        with in-unit interaction.”
+      </span>
+      <span class="pub-journal">Journal of Applied Physics</span>
+      118, 094505 (2015).
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     AWARDS
+===================================================== -->
+
+<section id="awards">
+
+  <h2>Awards</h2>
+
+  <ul class="simple-list">
+
+    <li>
+      <strong>Peking University Boya Young Fellowship</strong>,
+      Peking University
+    </li>
+
+    <li>
+      <strong>Excellent Young Scientists Fund (Overseas)</strong>,
+      National Natural Science Foundation of China, 2025
+    </li>
+
+    <li>
+      <strong>Excellent Ph.D. Student</strong>,
+      College of Engineering,
+      University of Missouri, 2022
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+<!-- =====================================================
+     TEACHING
+===================================================== -->
+
+<section id="teaching">
+
+  <h2>Teaching</h2>
+
+  <ul class="simple-list">
+
+    <li>
+      Ordinary Differential Equations · Fall 2026
+    </li>
+
+    <li>
+      Scientific Paper Writing · Fall 2026
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICE
+===================================================== -->
+
+<section id="service">
+
+  <h2>Professional Service</h2>
+
+
+  <h3>
+    Editorial Service
+  </h3>
+
+  <p class="service-text">
+    Editorial Board,
+    <em>Smart Materials and Devices</em>.
+  </p>
+
+
+  <h3 style="margin-top:28px;">
+    Reviewing
+  </h3>
+
+  <p class="service-text">
+
+    Physical Review Letters ·
+    Physical Review Materials ·
+    Physical Review B ·
+    Physical Review E ·
+    Physical Review Applied ·
+    International Journal of Mechanical Sciences ·
+    Journal of Physics D: Applied Physics ·
+    Scientific Reports ·
+    ASME Journal of Vibration and Acoustics ·
+    ASME Journal of Applied Mechanics ·
+    Journal of Vibration Testing and System Dynamics ·
+    PLOS ONE
+
+  </p>
+
+
+  <h3 style="margin-top:28px;">
+    Other Service
+  </h3>
+
+  <p class="service-text">
+
+    APS Experimental Physics Investigators (EPI)
+    funding program reviewer.
+
+    <br>
+
+    Session Chair,
+    Acoustofluidic Manipulation 2,
+    Acoustofluidics 2026,
+    Nanjing University.
+
+  </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  © 2026 Qian Wu · Peking University
+
+  <br>
+
+  School of Mechanics and Engineering Science
+
+</footer>
+
+
+</main>
 
 </body>
+
 </html>
