@@ -363,23 +363,28 @@
       color: #333;
     }
 
-    .publication {
-      display: grid;
+.publications-list {
+  counter-reset: publication;
+}
 
-      grid-template-columns: 35px 1fr;
+.publication {
+  counter-increment: publication;
 
-      gap: 10px;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-      margin-bottom: 20px;
-    }
+.pub-number::before {
+  content: counter(publication) ".";
+}
 
-    .pub-number {
-      color: #aaa;
-
-      font-size: 13px;
-
-      padding-top: 2px;
-    }
+.pub-number {
+  color: #aaa;
+  font-size: 13px;
+  padding-top: 2px;
+}
 
     .pub-content {
       font-size: 14px;
@@ -919,9 +924,9 @@
   </div>
 
 
-
+  <div class="publication-list">
   <div class="publication">
-    <div class="pub-number">1.</div>
+    <div class="pub-number"></div>
     <div class="pub-content">
       <u>Q. Wu</u>*, Z. T. Ma*, K. C. Yang*, H. J. Xu,
       J. D. H. Mai, M. Y. Liu, T. Naquin, M. Y. Liu,
@@ -1798,7 +1803,7 @@
 
 
   <div class="publication">
-    <div class="pub-number">62.</div>
+    <div class="pub-number"></div>
     <div class="pub-content">
       Y. Q. Chen, Y. H. Li†, <u>Q. Wu</u>, H. T. Jiang,
       Y. Zhang, H. Chen.
@@ -1811,7 +1816,7 @@
     </div>
   </div>
 
-
+</div>
 </section>
 
 
